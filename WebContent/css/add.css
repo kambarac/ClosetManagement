@@ -1,0 +1,98 @@
+* {
+padding: 0;
+margin: 0;
+}
+body{
+	font-family:"游ゴシック", "Yu Gothic","メイリオ";
+}
+
+h1{
+	color: #2f231e;
+	margin-top: 50px;
+	text-align: center;
+	font-family:"游ゴシック", "Yu Gothic","メイリオ";
+	font-size: 20px;
+}
+
+#attention{
+	color: #d2766a;
+	font-size: 12px;
+}
+
+.tbl{
+	margin-top: 20px;
+	/* 中央揃えalignが廃止されたって警告がうるさいので一応 */
+	margin-left: auto;
+    margin-right: auto;
+
+	/* 多分画像入れるやつ */
+	background-image: url(add.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-size: auto 100%;
+
+	/* 線 */
+	border-collapse: collapse;
+
+}
+.tbl th,.tbl td{
+	padding: 5px;
+	border-bottom: dashed 1px #ebd096;
+}
+.tbl th{
+	font-weight: 600;
+	text-align: center;
+}
+
+.div_btn{
+	text-align: center;
+	margin: 10px;
+}
+
+
+input[type="button"]{ -webkit-appearance: none;
+    	  				 -moz-appearance: none;
+        					  appearance: none;
+        			  border: 2px solid transparent;
+        			  background: #ebae96;
+        			  color: #fff;
+			          padding: 5px 10px;
+        			  font-size: 15px;
+}
+input[type="button"]:hover{
+					  border: 2px solid;
+        			  border-color: #ebae96;
+        			  background: transparent;
+        			  color :#2f231e;
+}
+input[type="button"]:focus{
+        			  border: 2px solid;
+        			  border-color: #96d3eb;
+        			  background: #96d3eb;
+        			  color: #fff;
+}
+body > hr{
+	margin: auto;
+	margin-top: 50px;
+	backgroubnd-color: #2f231e;
+}
+
+label {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	width :100%;
+	border: 2px solid transparent;
+	background: #ebae96;
+	color: #fff;
+	padding: 3px 10px;
+	cursor: pointer;
+	font-size: 10px;
+	display: inline-block;
+}
+label:hover{
+	border: 2px solid;
+	border-color: #ebae96;
+	background: transparent;
+	color: #2f231e;
+}

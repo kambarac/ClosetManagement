@@ -1,0 +1,263 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: "游ゴシック", "Yu Gothic", "メイリオ";
+}
+h1 {
+	margin-top: 60px;
+	text-align: center;
+	font-family: "游ゴシック", "Yu Gothic", "メイリオ";
+	font-size: 20px;
+	color: #2f231e;
+}
+
+.div1{
+	margin-top: 50px;
+	text-align: center;
+	font-size: 20px;
+	color: #2f231e;
+}
+
+
+.info_label {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	wight :100%;
+	border: 2px solid transparent;
+	background: #ebae96;
+	color: #fff;
+	padding: 3px 10px;
+	cursor: pointer;
+	font-size: 13px;
+	display: inline-block;
+}
+.info_label:hover{
+	border: 2px solid;
+	border-color: #ebae96;
+	background: transparent;
+	color: #2f231e;
+}
+
+#label1, #label2, #label3 {
+	display: none;
+}
+
+#info{
+	border-top:solid 1px #ededed;
+	border-bottom: solid 1px #ededed;
+	margin-right: auto;
+	margin-left: auto;
+	border-collapse: collapse;
+	border-spacing: 0;
+	table-layout: fixed;
+	color: #2f231e;
+}
+
+#info th{
+	text-align: center;
+	padding: 10px 10px;
+	border-right:solid 1px #ededed;
+	border-left:solid 1px #ededed;
+	color: #2f231e;
+}
+
+#info td{
+	text-align: center;
+	padding: 10px 0;
+	border-right:solid 1px #ededed;
+	border-left:solid 1px #ededed;
+	border-bottom:solid 1px transparent;
+	width: 155px;
+}
+
+#last td{
+  border-bottom:solid 1px #ededed;
+}
+#typebgc{
+	background-color: #f5b9b8;
+}
+#colorbgc{
+	background-color: #f5d9b8;
+}
+#makersbgc{
+	background-color: #f5f2b8;
+}
+
+.hidden_box_type {
+	margin-left: auto;
+	margin-right: auto;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+
+#label1:checked ~ .hidden_box_type {
+	height: auto;
+	widht: auto;
+	padding: auto;
+	opacity : 1;
+}
+.hidden_box_color {
+	margin-left: auto;
+	margin-right: auto;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+#label2:checked ~ .hidden_box_color {
+	height: auto;
+	widht: auto;
+	padding: auto;
+	opacity : 1;
+}
+
+.hidden_box_makers {
+	margin-left: auto;
+	margin-right: auto;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+#label3:checked ~ .hidden_box_makers {
+	height: auto;
+	widht: auto;
+	padding: auto;
+	opacity : 1;
+}
+
+.hidden_type,.hidden_color,.hidden_makers{
+	border-top:solid 1px #ededed;
+	border-bottom: solid 1px #ededed;
+	margin-right: auto;
+	margin-left: auto;
+	border-collapse: collapse;
+	border-spacing: 0;
+	table-layout: fixed;
+	width: 469px;
+}
+.hidden_type th,.hidden_color th,.hidden_makers th{
+	text-align: center;
+	padding: 10px 10px;
+	border-right:solid 1px #ededed;
+	border-left:solid 1px #ededed;
+	border-bottom:solid 1px #ededed;
+	color: #2f231e;
+	/* ↓ 文字数がオーバーしたとき"…" */
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.hidden_type th{
+	background-color: #f5b9b8;
+}
+.hidden_color th{
+	background-color: #f5d9b8;
+}
+.hidden_makers th{
+	background-color: #f5f2b8;
+}
+
+
+.hidden_type td,.hidden_color td,.hidden_makers td{
+	text-align: center;
+	padding: 10px 0;
+	border-right:solid 1px #ededed;
+	border-left:solid 1px #ededed;
+	border-bottom:solid 1px #ededed;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.div_del input[type="button"],.csv_btn input[type="button"]{
+	all:initial;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+    border: 2px solid transparent;
+    color: #fff;
+	padding: 6px 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.div_del input[type="button"]:hover,.csv_btn input[type="button"]:hover{
+	border: 2px solid;
+	color : #2f231e;
+    background: transparent;
+}
+.div_del input[type="button"]:focus,.csv_btn input[type="button"]:focus{
+	border: 2px solid;
+	color: #fff;
+}
+
+.div_del input[type="button"]{
+	margin-top: 30px;
+	background: #96bceb;
+}
+.div_del input[type="button"]:hover{
+	border-color: #96bceb;
+}
+.div_del input[type="button"]:focus{
+	border-color: transparent;
+	background: #e9685e;
+}
+
+.csv_btn input[type="button"]{
+	margin-top: 10px;
+	background: #f5b9b8;
+}
+.csv_btn input[type="button"]:hover{
+	border-color: #f5b9b8;
+}
+.csv_btn input[type="button"]:focus{
+	border-color: #96d3eb;
+	background: #96d3eb;
+}
+
+
+body > hr {
+	margin: auto;
+	margin-top: 10px;
+	backgroubnd-color: #2f231e;
+}
+
+.div_btn{
+	margin:auto;
+	margin-top: 10px;
+}
+
+.div_btn input[type="button"]{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+    appearance: none;
+    border: 2px solid transparent;
+    background: #ebae96;
+    color: #fff;
+	padding: 5px 10px;
+    font-size: 15px;
+}
+.div_btn input[type="button"]:hover{
+					  border: 2px solid;
+        			  border-color: #ebae96;
+        			  background: transparent;
+        			  color :#2f231e;
+}
+.div_btn input[type="button"]:focus{
+        			  border: 2px solid;
+        			  border-color: #96d3eb;
+        			  background: #96d3eb;
+        			  color: #fff;
+}

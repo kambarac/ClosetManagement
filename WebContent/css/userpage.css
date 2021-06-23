@@ -1,0 +1,247 @@
+﻿* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	font-family: "游ゴシック", "Yu Gothic", "メイリオ";
+}
+
+h1 {
+	margin-top: 50px;
+	text-align: center;
+	font-family: "游ゴシック", "Yu Gothic", "メイリオ";
+	font-size: 20px;
+}
+
+.btn {
+	background-color: #fff;
+	margin: 20px 0;
+}
+
+.search_tbl {
+	display: inline-block;
+	font-family: "游ゴシック", "Yu Gothic", "メイリオ";
+	border-collapse: collapse;
+}
+
+.search_tbl th, .search_tbl td {
+	white-space: nowrap;
+	border-bottom: dashed 1px #ebd096;
+	padding: 10px;
+}
+
+.nline th, .nline td {
+	border-bottom: none;
+}
+
+hr {
+	margin-left: auto;
+	margin-right: auto;
+	backgroubnd-color: #2f231e;
+}
+
+img {
+	vertical-align: top;
+}
+
+table.result {
+	background-color: #ededed;
+	font-family: "游ゴシック", "Yu Gothic", "メイリオ";
+	display: inline-block;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	margin: 2px;
+	font-size: 85%;
+	table-layout: fixed;
+
+}
+
+.result th {
+	min-width: 5em;
+	margin: 0;
+	padding: 2px;
+	white-space: nowrap;
+}
+
+.result .intd {
+	min-width: 10em;
+	max-width: 10em;
+	padding: 1% 5px 1% 5px;
+	text-align: left;
+	/* ↓ 文字数がオーバーしたとき"…" */
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+
+.img_box {
+	height: 200px;
+	width: 200px;
+	position:relative;
+}
+.result_img{
+	height:100%;
+	weight:100%;
+}
+
+.list {
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+
+.list ul {
+	table-layout: fixed;
+	width: 100%;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	vertical-align: center;
+}
+
+.list ul li {
+	margin: 0;
+	display: inline-block;
+}
+
+.s_btn {
+	margin: 0 5px;
+}
+
+.btn input[type="button"] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: 2px solid transparent;
+	background: #ebae96;
+	color: #fff;
+	padding: 3px 10px;
+	font-size: 15px;
+}
+
+.btn input[type="button"]:hover {
+	border: 2px solid;
+	border-color: #ebae96;
+	background: transparent;
+	color: #2f231e;
+}
+
+.btn input[type="button"]:focus {
+	border: 2px solid;
+	border-color: #96d3eb;
+	background: #96d3eb;
+	color: #fff;
+}
+
+#labelbtn{
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+
+label {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	width :100%;
+	border: 2px solid transparent;
+	background: #ebae96;
+	color: #fff;
+	padding: 3px 10px;
+	cursor: pointer;
+	font-size: 10px;
+	display: inline-block;
+}
+label:hover{
+	border: 2px solid;
+	border-color: #ebae96;
+	background: transparent;
+	color: #2f231e;
+}
+
+#label1{
+	display: none;
+}
+
+.search_box {
+	margin-left: auto;
+	margin-right: auto;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+#label1:checked ~ .search_box{
+	height: auto;
+	padding: auto;
+	opacity : 1;
+}
+
+.pageingBtn,.pageingBtnDis,.outpageingBtn,.pageingBtnBaA{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: 2px solid transparent;
+	color: #fff;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	font-size: 12px;
+	white-space: nowrap;
+}
+.pageingBtn{
+	background: #ebae96;
+}
+.pageingBtn:hover {
+	border: 2px solid;
+	border-color: #ebae96;
+	background: transparent;
+	color: #2f231e;
+}
+
+.pageingBtnDis:disabled{
+	 background-color: #96d3eb;
+}
+
+#pageingUl{
+	margin: auto;
+}
+
+#pageingUl li{
+	display: inline-block;
+	vertical-align: top;
+}
+
+#marginbtn{
+	margin-bottom: 20px;
+}
+
+.outpageingBtn{
+	background: #eb96a0;
+}
+.outpageingBtn:hover{
+	border: 2px solid;
+	border-color: #eb96a0;
+	background: transparent;
+	color: #2f231e;
+}
+.pageingBtnBaA{
+	background: #ae9f99;
+}
+.pageingBtnBaA:hover{
+	border: 2px solid;
+	border-color: #ae9f99;
+	background: transparent;
+	color: #2f231e;
+}

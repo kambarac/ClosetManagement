@@ -1,0 +1,79 @@
+html{
+	height:100%;
+}
+h1{
+	color: #2f231e;
+	text-align: center;
+	font-family:"游ゴシック", "Yu Gothic","メイリオ";
+	font-size: 30px;
+}
+p{
+	color: #2f231e;
+	text-align: center;
+	font-family:"游ゴシック", "Yu Gothic","メイリオ";
+	font-weight: bold;
+	font-size: 20px;
+
+}
+hr{
+	margin: auto;
+	backgroubnd-color: #2f231e;
+}
+div{
+	font-size:15px;
+}
+
+table{
+	font-family:"游ゴシック", "Yu Gothic","メイリオ";
+	/* 中央揃えalignが廃止されたって警告がうるさいので一応 */
+	margin-left: auto;
+    margin-right: auto;
+	border-collapse: collapse;
+	border-spacing: 0;
+	/*background-image: url(top.png);*/
+	table-layout:fixed;
+}
+.line{border-bottom: dashed 1px #ebd096;}
+
+td{ padding: 10px 10px;}
+
+
+input[type="button"]{ -webkit-appearance: none;
+    	  				 -moz-appearance: none;
+        					  appearance: none;
+        			  border: 2px solid transparent;
+        			  background: #ebae96;
+        			  color: #fff;
+			          padding: 6px 10px;
+        			  font-size: 15px;
+        			  margin-top: 20px;
+        			  margin-bottom: 30px;
+}
+input[type="button"]:hover{
+					  border: 2px solid;
+        			  border-color: #ebae96;
+        			  background: transparent;
+        			  color :#2f231e;
+}
+input[type="button"]:focus{
+        			  border: 2px solid;
+        			  border-color: #96d3eb;
+        			  background: #96d3eb;
+        			  color: #fff;
+}
+
+#entry_div{
+	text-align: center;
+}
+
+#entry_btn{
+	font-size: 12px;
+	background: #f5b9b8;
+	margin-top: 10px;
+}
+#entry_btn:hover{
+	border: 2px solid;
+	border-color: #f5b9b8;
+	background: transparent;
+    color :#2f231e;
+}

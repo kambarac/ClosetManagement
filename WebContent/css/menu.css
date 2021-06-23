@@ -1,0 +1,150 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+header{
+	all:initial;
+	font-family:"游ゴシック", "Yu Gothic","メイリオ";
+}
+
+#title {
+    top: 0;
+	font-size: 150%;
+	font-weight: 500;
+	padding: 0px 80% 1px 15%;
+	position: fixed;
+    display: block;
+    z-index: 10;
+	background-color: #fff;
+}
+
+#headline{
+	top: 40px;
+	position: fixed;
+    z-index: 15;
+}
+
+.menu-btn {
+	all:initial;
+    position: fixed;
+    display: flex;
+    top: 5px;
+    right: 5px;
+    height: 28px;
+	width: 28px;
+    justify-content: center;
+    align-items: center;
+    z-index: 30;
+    border: 2px solid;
+    border-color: #ebae96;
+    background-color: #ebae96;
+}
+
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 15px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+    transition: 0.3s;
+}
+.menu-btn span:before {
+    bottom: 8px;
+}
+.menu-btn span:after {
+    top: 8px;
+}
+
+.menu-btn:hover{
+    border: 2px solid;
+    border-color: #ebae96;
+    background: transparent;
+    color: #2f231e;
+}
+.menu-btn:hover span,.menu-btn:hover span:before,.menu-btn:hover span:after{
+	background-color: #2f231e;
+}
+
+#menu-button:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-button:checked ~ .menu-btn span:before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-button:checked ~ .menu-btn span:after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+#menu-button:checked ~ .menu-btn{
+	border-color:  transparent;
+	background: #96d3eb;
+}
+#menu-button:checked ~ .menu-btn:hover{
+    border: 2px solid;
+    border-color: #96d3eb;
+    background: transparent;
+    color: #2f231e;
+}
+#menu-button:checked ~.menu-btn:hover span{
+	background-color: rgba(255, 255, 255, 0);
+}
+#menu-button:checked ~.menu-btn:hover span:before,
+#menu-button:checked ~.menu-btn:hover span:after{
+	background-color: #2f231e;
+}
+
+
+#menu-button{
+	display: none;
+}
+
+/* メニュー項目 */
+.menu-item{
+	display: block;
+	width: 28%;
+    height: 250px;
+    margin-top: 37px;
+    margin-right: 5px;
+    padding: 10px;
+    top: 0;
+    left: 100%;
+    position: fixed;
+    z-index: 20;
+    background-color: #96d3eb;
+    transition: 0.2s;
+}
+.menu-item ul{
+	list-style: none;
+}
+
+.menu-item ul li{
+	padding: 5px 2px;
+	list-style: none;
+	border-bottom: solid 1px #ffffff;
+}
+
+.menu-item ul li a{
+	color: #ffffff;
+	display: block;
+	text-decoration: none;
+}
+
+#menu-button:checked ~ .menu-item{
+	left: -webkit-calc(70% - 5px);
+	left: calc(70% - 5px);
+}
+
+.user_tbl{
+	width: auto;
+    height: auto;
+    color: #ffffff;
+}
+
+.user_tbl td{
+	padding : 0 0 0 0.5em;
+}

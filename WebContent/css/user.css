@@ -1,0 +1,109 @@
+
+body{
+	font-family:"游ゴシック", "Yu Gothic","メイリオ";
+}
+
+h1{
+	color: #2f231e;
+	text-align: center;
+	font-family:"游ゴシック", "Yu Gothic","メイリオ";
+	font-size: 30px;
+}
+
+h2,#change{
+	color: #2f231e;
+	text-align: center;
+	font-family:"游ゴシック", "Yu Gothic","メイリオ";
+	font-size: 20px;
+}
+
+#change{
+	margin-top: 100px;
+}
+
+.tbl{
+	margin-top: 20px;
+	/* 中央揃えalignが廃止されたって警告がうるさいので一応 */
+	margin-left: auto;
+    margin-right: auto;
+
+	/* 線 */
+	border-collapse: collapse;
+
+}
+
+.tbl th,.tbl td{
+	color: #2f231e;
+	padding: 8px;
+	border-bottom: dashed 1px #ebd096;
+}
+
+.tbl th{
+	font-size: 15px;
+	font-weight: normal;
+	text-align: center;
+}
+
+
+.b_div{
+	text-align: center;
+	margin: 10px;
+}
+input[type="button"],#login_btn,#top_btn,.div_del input[type="button"]{
+					  -webkit-appearance: none;
+					  -moz-appearance: none;
+					  appearance: none;
+					  border: 2px solid transparent;
+					  background: #f5b9b8;
+        			  color: #fff;
+        			  margin-top: 20px;
+        			  margin-bottom: 30px;
+			          padding: 5px 10px;
+        			  font-size: 15px;
+}
+input[type="button"]:hover,#login_btn:hover,#top_btn:hover,.div_del input[type="button"]:hover{
+					  border: 2px solid;
+        			  border-color: #f5b9b8;
+        			  background: transparent;
+        			  color :#2f231e;
+}
+input[type="button"]:focus,.div_del input[type="button"]:focus{
+        			  border: 2px solid;
+        			  border-color: #96d3eb;
+        			  background: #96d3eb;
+        			  color: #fff;
+}
+body > hr{
+	margin: auto;
+	backgroubnd-color: #2f231e;
+}
+
+#login_btn{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 12px;
+	background: #ebae96;
+}
+#login_btn:hover,#top_btn:hover{
+	border-color: #ebae96;
+}
+
+#top_btn{
+	background: #ebae96;
+	font-size: 15px;
+}
+#login_div{
+	text-align: center;
+}
+
+.div_del input[type="button"]{
+	margin-top: 10px;
+	background: #96bceb;
+}
+.div_del input[type="button"]:hover{
+	border-color: #96bceb;
+}
+.div_del input[type="button"]:focus{
+	border-color: transparent;
+	background: #e9685e;
+}
